@@ -1,0 +1,198 @@
+body {
+  font-family: "Be Vietnam", sans-serif;
+  overflow-x: hidden;
+}
+
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #242d52;
+  
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1rem;
+  color: #9095a7;
+
+}
+
+/* color */
+
+a.nav-link {
+  color: #242d52 !important;
+}
+
+a.nav-link:hover {
+  color: #9095a7 !important;
+}
+
+.text-primary {
+  color: #242d52 !important;
+}
+
+
+
+/* Nav */
+
+.nav-link {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+
+/* showcase */
+
+.bg-img-1 {
+  position: relative;
+}
+
+.bg-img-1::after {
+  /* 1200px and larger only */
+  /* content: "";
+  position: absolute;
+  background: url(./images/bg-tablet-pattern.svg);
+  background-repeat: no-repeat;
+  height: 850px;
+  width: 850px;
+  bottom: 75px;
+  left: 52%;
+  z-index: -1; */
+
+  /* Tablet version */
+  content: "";
+  position: absolute;
+  background: url(./images/bg-tablet-pattern.svg);
+  background-repeat: no-repeat;
+  height: 850px;
+  width: 850px;
+  bottom: 368px;
+  background-size: 95%;
+  left: 22%;
+  z-index: -1;
+
+}
+
+.showcase-img {
+  margin-top: -30px;
+}
+
+.btn {
+  font-size: 16px;
+  border-radius: 30px;
+  padding: 10px 30px;
+}
+
+.btn-primary {
+border-width: 2px;
+background: #f25f3a;
+border-color: #f25f3a;
+color: #fff;
+position: relative;
+top: 0;
+-webkit-transition: .3s all ease;
+-o-transition: .3s all ease;
+transition: .3s all ease;
+-webkit-box-shadow: 0 4px 20px -5px rgba(66, 133, 244, 0.4);
+box-shadow: 0 4px 20px -5px rgba(66, 133, 244, 0.4);
+}
+
+
+/* Difference Section  */
+
+.bg-banner {
+  position: relative;
+}
+
+.bg-banner::after {
+
+  content: "";
+  position: absolute;
+  background-color: #f25f3a;
+  opacity: 0.2;
+  /* need to specify height and width for banner to pop up */
+  height: 50px;
+  width: 600px; 
+}
+
+
+h2 {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+
+h3.align-self-center {
+  margin-bottom: 0px;
+}
+
+.bg-img-2 {
+  position: relative;
+}
+
+.bg-img-2::after {
+  /* 1200px and larger only */
+  /* content: "";
+  position: absolute;
+  background: url(./images/bg-tablet-pattern.svg);
+  background-repeat: no-repeat;
+  height: 850px;
+  width: 850px;
+  bottom: -560px;
+  left: -65%;
+  z-index: -1; */
+
+
+  /* Tablet Version */
+  content: "";
+  position: absolute;
+  background: url(./images/bg-tablet-pattern.svg);
+  background-repeat: no-repeat;
+  height: 850px;
+  width: 850px;
+  bottom: 220px;
+  background-size: 75%;
+  left: 56%;
+  z-index:-1;
+}
+
+
+
+
+
+
+
+
+@media (min-width: 992px) {
+
+
+
+  .bg-img-1::after {
+    bottom: 75px;
+    left: 52%;
+    background-size: 100%;
+  }
+
+  .bg-img-2::after {
+    bottom: -560px;
+    left: -65%;
+    background-size: 100%;
+  }
+
+.ml-lg-6  {
+    margin-left: 5rem!important;
+}
+
+.bg-banner::after {
+  /* another way to hide banner? */
+  height: 0px;
+}
+
+
+}
+
