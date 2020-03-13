@@ -1,6 +1,6 @@
 body {
   font-family: "Be Vietnam", sans-serif;
-  overflow-x: hidden;
+  /* overflow: hidden; causes scrolling downward errors*/
 }
 
 
@@ -37,8 +37,21 @@ a.nav-link:hover {
 }
 
 
+/* utilities */
 
-/* Nav */
+/* .position-relative {
+  position: relative;
+} already a bootstrap class!*/
+
+
+
+.bg-img-1-v2 {
+  position: relative;
+  overflow: hidden;
+
+}
+
+                      /* Nav */
 
 .nav-link {
   font-size: 0.9rem;
@@ -46,13 +59,26 @@ a.nav-link:hover {
 }
 
 
-/* showcase */
+                      /* showcase */
 
-.bg-img-1 {
+#showcase {
+  overflow: hidden;
   position: relative;
 }
 
-.bg-img-1::after {
+
+.showcase-bg-img-1 {
+  position: absolute;
+    right: -578px;
+    top: -258px;
+    z-index: -1;
+}
+
+.bg-img-v1 {
+  position: relative;
+}
+
+.bg-img-v1::after {
   /* 1200px and larger only */
   /* content: "";
   position: absolute;
@@ -78,7 +104,7 @@ a.nav-link:hover {
 
 }
 
-.showcase-img {
+.graph-img {
   margin-top: -30px;
 }
 
@@ -103,7 +129,15 @@ box-shadow: 0 4px 20px -5px rgba(66, 133, 244, 0.4);
 }
 
 
-/* Difference Section  */
+
+
+
+
+                                                  /* Difference Section  */
+
+#diff-section {
+  overflow-x: hidden;
+}
 
 .bg-banner {
   position: relative;
@@ -131,11 +165,11 @@ h3.align-self-center {
   margin-bottom: 0px;
 }
 
-.bg-img-2 {
+.bg-img-22 {
   position: relative;
 }
 
-.bg-img-2::after {
+.bg-img-22::after {
   /* 1200px and larger only */
   /* content: "";
   position: absolute;
@@ -162,6 +196,16 @@ h3.align-self-center {
 }
 
 
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+  .showcase-bg-img-1 {
+    right: -228px;
+    top: -168px;
+  }
+  
+
+}
 
 
 
@@ -172,10 +216,18 @@ h3.align-self-center {
 
 
 
-  .bg-img-1::after {
+  /* .bg-img-1::after {
     bottom: 75px;
     left: 52%;
     background-size: 100%;
+  } */
+
+  .showcase-bg-img-1 {
+    /* Laptop L size */
+    position: absolute;
+    right: -125px;
+    top: -128px;
+    z-index: -1;
   }
 
   .bg-img-2::after {
