@@ -5,10 +5,14 @@ body {
 
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 2.2rem;
   font-weight: 700;
   color: #242d52;
   
+}
+
+h2 {
+  color: #242d52;
 }
 
 h3 {
@@ -196,8 +200,31 @@ h3.align-self-center {
 }
 
 
+
+    
+
+
+
+
+/* // Small devices (landscape phones, 576px and LOWER) */
+@media (max-width: 576px) { 
+
+  .showcase-bg-img-1 {
+    right: -365px;
+    top: -277px;
+    transform: scale(0.6); 
+  }
+      
+}
+
+
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
+
+  h1 {
+  font-size: 3.5rem;
+
+  }
 
   .showcase-bg-img-1 {
     right: -228px;
