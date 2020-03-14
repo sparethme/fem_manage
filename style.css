@@ -1,3 +1,10 @@
+:root {
+  --primary-orange: #f25f3a;
+  --primary-blue: #242d52;
+}
+
+
+
 body {
   font-family: "Be Vietnam", sans-serif;
   /* overflow: hidden; causes scrolling downward errors*/
@@ -12,12 +19,13 @@ h1 {
 }
 
 h2 {
-  color: #242d52;
+  color: var(--primary-blue);
 }
 
-h3 {
+h3, h4 {
   font-size: 1rem;
   font-weight: bold;
+  color: var(--primary-blue);
 }
 
 p {
@@ -60,6 +68,10 @@ a.nav-link:hover {
 .nav-link {
   font-size: 0.9rem;
   font-weight: 500;
+}
+
+.btn-nav {
+  display: none;
 }
 
 
@@ -116,31 +128,36 @@ a.nav-link:hover {
   font-size: 16px;
   border-radius: 30px;
   padding: 10px 30px;
+  background: #f25f3a;
+  color: white !important;
+  box-shadow: 0px 5px 15px rgba(242, 95, 58, 0.521);
+  transition: all 0.3s ease;
 }
 
-.btn-primary {
-border-width: 2px;
-background: #f25f3a;
-border-color: #f25f3a;
-color: #fff;
-position: relative;
-top: 0;
--webkit-transition: .3s all ease;
--o-transition: .3s all ease;
-transition: .3s all ease;
--webkit-box-shadow: 0 4px 20px -5px rgba(66, 133, 244, 0.4);
-box-shadow: 0 4px 20px -5px rgba(66, 133, 244, 0.4);
+.btn:hover {
+  background: #f25f3a85;
 }
 
-
-
-
-
-
-                                                  /* Difference Section  */
+                                                  /* Difference /Feature Section  */
 
 #diff-section {
   overflow-x: hidden;
+}
+
+.diff-digit {
+  background: var(--primary-orange);
+  width: 70px;
+  display: flex;
+  border-radius: 30px;
+  padding: 10px 30px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.btn.btn-diff-digit {
+  box-shadow: none;
+  
 }
 
 .bg-banner {
@@ -151,11 +168,13 @@ box-shadow: 0 4px 20px -5px rgba(66, 133, 244, 0.4);
 
   content: "";
   position: absolute;
-  background-color: #f25f3a;
-  opacity: 0.2;
+  /* background: #fde7e2; */
+  background: #fff0ed;
   /* need to specify height and width for banner to pop up */
-  height: 50px;
-  width: 600px; 
+  height: 45px;
+  width: 100%; 
+  border-radius: 60px;
+  z-index: -1;
 }
 
 
@@ -201,7 +220,43 @@ h3.align-self-center {
 
 
 
-    
+/* Testimonials Section */
+
+#testimonials img {
+  margin-top: -65px;
+  width: 65px;
+}
+
+.card {
+  background-color: #fafafa;
+  border-style: none;
+}
+
+.swiper-container {
+  width: 90%;
+  height: 300px;
+  margin-bottom: 2rem;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+.swiper-pagination-bullet {
+  background-color: white !important;
+  border: 1px solid var(--primary-orange);
+  opacity: 1;
+  outline: none;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--primary-orange) !important;
+}
 
 
 
@@ -248,6 +303,10 @@ h3.align-self-center {
     left: 52%;
     background-size: 100%;
   } */
+
+  .btn-nav {
+     display: inline-block;
+  }
 
   .showcase-bg-img-1 {
     /* Laptop L size */
