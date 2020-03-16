@@ -1,6 +1,7 @@
 :root {
   --primary-orange: #f25f3a;
   --primary-blue: #242d52;
+  --dark-background: #1d1e25;
 }
 
 
@@ -48,6 +49,9 @@ a.nav-link:hover {
   color: #242d52 !important;
 }
 
+.dark-background {
+  background: var(--dark-background);
+}
 
 /* utilities */
 
@@ -56,6 +60,12 @@ a.nav-link:hover {
 } already a bootstrap class!*/
 
 
+.bg-imgs {
+
+  position: relative;
+  overflow: hidden;
+
+}
 
 .bg-img-1-v2 {
   position: relative;
@@ -106,7 +116,6 @@ a.nav-link:hover {
   left: 52%;
   z-index: -1; */
 
-  /* Tablet version */
   content: "";
   position: absolute;
   background: url(./images/bg-tablet-pattern.svg);
@@ -119,6 +128,25 @@ a.nav-link:hover {
   z-index: -1;
 
 }
+
+.bg-img-2 {
+  position: relative;
+}
+
+.showcase-img-2 {
+  position: absolute;
+  top: -613px;
+  left: -3px;
+  z-index: -1;
+  transform: scale(0.5);
+}
+
+.bg-img-3 {
+  position: absolute;
+
+}
+
+
 
 .graph-img {
   margin-top: -30px;
@@ -260,6 +288,68 @@ h3.align-self-center {
 
 
 
+/* CTA Section */
+
+#cta {
+  background-color: var(--primary-orange);
+  overflow: hidden;
+}
+
+.cta-bg {
+  position: relative;
+} 
+
+.cta-bg-img {
+  
+position: absolute;
+    left: -425px;
+    top: -35px;
+    opacity: 0.1;
+    /* transform: scale(0.75); */
+    width: 165%;
+}
+
+
+.btn-alt {
+    font-size: 16px;
+    border-radius: 30px;
+    padding: 10px 30px;
+    color: #f25f3a !important;
+    background: white !important;
+    box-shadow: 0px 5px 15px rgba(242, 95, 58, 0.521);
+    transition: all 0.3s ease;
+}
+
+
+/* Footer */
+
+li a {
+  color: white;
+}
+
+li a:hover {
+  text-decoration: none;
+  color: var(--primary-orange)
+}
+
+i.fab {
+  color:white;
+}
+
+.fab:hover {
+  color: var(--primary-orange);
+}
+
+.round-input {
+  border-radius: 30px;
+  padding: 10px;
+}
+
+
+
+
+
+
 
 /* // Small devices (landscape phones, 576px and LOWER) */
 @media (max-width: 576px) { 
@@ -270,6 +360,27 @@ h3.align-self-center {
     transform: scale(0.6); 
   }
       
+  .showcase-img-2 {
+    position: absolute;
+    top: -615px;
+    left: 10px;
+    z-index: -1;
+    transform: scale(0.45);
+
+}
+}
+
+/* // Small devices (landscape phones, 577px and up) */
+@media (min-width: 577px) { 
+
+  .showcase-img-2 {
+    position: absolute;
+    top: -686px;
+    left: 429px;
+    z-index: -1;
+    transform: scale(0.65);
+}
+
 }
 
 
@@ -288,9 +399,6 @@ h3.align-self-center {
   
 
 }
-
-
-
 
 
 
@@ -322,6 +430,15 @@ h3.align-self-center {
     background-size: 100%;
   }
 
+  .bg-img-3 {
+    position: absolute;
+    z-index: -1;
+    bottom: 401px;
+    left: -499px;
+}
+
+
+
 .ml-lg-6  {
     margin-left: 5rem!important;
 }
@@ -330,6 +447,17 @@ h3.align-self-center {
   /* another way to hide banner? */
   height: 0px;
 }
+
+
+.cta-bg-img {
+  position: absolute;
+  left: -10px;
+  top: -70px;
+  opacity: 0.1;
+  /* transform: scale(0.75); */
+  width: 60%;
+}
+
 
 
 }
